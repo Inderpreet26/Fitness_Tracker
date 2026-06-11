@@ -1,0 +1,10 @@
+app:
+  image: inderpreet26/fitness-tracker-dev
+  tag: latest
+  replicas: 3
+  nodeEnv: production
+  mongodbUri: mongodb://mongodb-service:27017/fitness-tracker-prod
+  serviceType: LoadBalancer
+
+mongodb:
+  version: "7-jammy"
