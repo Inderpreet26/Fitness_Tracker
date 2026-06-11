@@ -1,0 +1,10 @@
+app:
+  image: inderpreet26/fitness-tracker-dev
+  tag: latest
+  replicas: 1
+  nodeEnv: development
+  mongodbUri: mongodb://mongodb-service:27017/fitness-tracker-dev
+  serviceType: ClusterIP
+
+mongodb:
+  version: "7-jammy"
