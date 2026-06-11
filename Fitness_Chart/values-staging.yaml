@@ -1,0 +1,10 @@
+app:
+  image: inderpreet26/fitness-tracker-dev
+  tag: latest
+  replicas: 2
+  nodeEnv: staging
+  mongodbUri: mongodb://mongodb-service:27017/fitness-tracker-staging
+  serviceType: LoadBalancer
+
+mongodb:
+  version: "7-jammy"
